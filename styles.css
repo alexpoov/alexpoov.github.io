@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+:root{
+  --header-height: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: .938rem;
+  font-family: Raleway;
+  color: rgb(42, 42, 42);
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 1.05em;
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  padding: 0 ;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(42, 42, 42);
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  /* display: flex;
+  flex-direction: row; */
+  margin-bottom: 2rem;
+  padding: 10px 25px;
+}
+
+
+.nav {
+  padding: 10px 25px;
+  height: 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px rgb(218, 218, 218) dashed;
+}
+
+.nav__logo {
+  overflow: hidden;
+  position: relative;
+}
+
+.nav ul {
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav li:not(:last-child){
+  padding: 13px 14px 8px 14px;
+  margin: 0 2px;
+}
+
+
+.nav li:not(:last-child):hover{
+  background-color: rgb(187, 187, 187);
+}
+
+.button {
+  background-color: rgb(42, 42, 42);
+  border: 2px solid rgb(42, 42, 42);
+  color: white;
+  padding: 6px;
+  margin-left: 6px;
+  border-radius: 2px;
+	transition: all 300ms ease;
+}
+
+.button:hover {
+	background-color: white;
+	color: rgb(42, 42, 42);
+}
+
+.button:active {
+  color: rgb(68, 138, 45);
+  transition: 0ms;
+}
+
+section p{
+  padding: 10px 20px 10px 0;
+}
+
+.column img {
+  border-radius: 2px;
+  max-width: 100%;
+  max-height: 700px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  float: right;
+}
+
+.column#col_text {
+  float: left;
+  padding: 0px;
+  width: 60%;
+}
+
+.column#col_img {
+  float: left;
+  padding: 0px;
+  width: 40%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.projects ul {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.projects li {
+  border-radius: 8px;
+  border: 1px dashed rgb(41, 41, 41);
+  position: relative;
+  height: 400px;
+  width: 50%;
+}
+
+.projects li:not(:last-child) {
+  margin-right: 15px;
+}
+
+.projects li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.overlay {
+  background-color: rgb(42, 42, 42, 0.9);
+  overflow: hidden;
+  position: absolute;
+  border-radius: 8px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 0;
+  transition: .5s ease;
+}
+.overlay .text{
+  padding: 20px 10px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+
+.projects li:hover .overlay {
+  max-height: 150px;
+}
+
+.contact__from{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact__input {
+  width: 100%;
+  font-family: Raleway;
+  padding: 0.7rem;
+  font-size: 0.8em;
+  border-radius: 4px;
+  border: 1.5px solid rgb(42, 42, 42);
+}
+
+.contact__input#name {
+  margin: 0 0.2em 0.3em 0
+}
+
+.contact__input#email{
+  margin: 0 0 0.3em 0.2em
+}
+
+
+input[type="button"]
+{
+  font-size: 0.95em;
+  font-family: Raleway;
+}
+
+.contact .button {
+  display: flex;
+  margin: 5px 0 0 0;
+  padding: 10px;
+}
+
+@media (orientation: portrait) {
+  .column{
+    width: 100%;
+  }
+}
+
+@media (orientation: portrait) {
+  .projects ul{
+    flex-direction: column;
+  }
+  .projects li {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+  }
+  .column img{
+    width: 100%;
+    margin: 5px 0;
+    max-height: 100%;
+  }
+  
+}
+
+.footer {
+  background-color: rgb(42, 42, 42);
+  color: #fff;
+  text-align: center;
+  font-size: 0.8em;
+  text-decoration: none;
+  /* position: fixed; */
+  padding: 10px 10px 10px 10px;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/* <box-icon type='logo' name='gmail'></box-icon>
+  <box-icon type='logo' name='python'></box-icon> 
+  <box-icon type='logo' name='telegram'></box-icon>*/

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Alex Popov</title>
+    </head>
+    
+    <body>
+        <!--===== HEADER =====-->
+        <header class="header">
+            <nav class="nav">
+                <div>
+                    <a href="#" class="nav__logo anim-typewriter"><b>@alexpoov</b> &#127803;</a>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="https://www.t.me/alexpoov/" target="_blank"><i class='bx bxl-telegram'></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/alexpoov/" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                        <li><a href="https://github.com/alexpoov" target="_blank"><i class='bx bxl-github'></i></a></li>
+                        <li><a href="https://github.com/alexpoov/alexpoov/blob/master/cv_12.pdf" target="_blank" class="button"><span style="font-size:20px;">Load CV</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--===== ABOUT =====-->
+            <section>
+
+                <div class="column" id="col_text">
+                    <h2 class="about__text">
+                        Hey, I’m Alex. <br> Nice to meet you.
+                    </h2>
+                    <p class="about__text">Honestly, I don't know who am I, so just keep seeking for knowledge in fields I'm interested in: Data Science, UX Design, and Machine Learning. Looking forward to work on any interested projects as a product designer or quantitative analytic.</p>           
+                    <p class="about__text">I'm both sufficient in R and Python analytical, machine learning, and visualisation packages. Have some proficiency in UX Research methods and prototyping in Figma. Also familiar with web application development, Tableau, SQL, and Git.</p>
+                    <p class="about__text">BSc Economics - Higher School of Economics (2021) <br> MSc Information Systems and Human Computer Interaction - Higher School of Economics (exp. 2023) </p>
+                </div>
+
+                <div class="column" id="col_img">
+                    <img src="me.png" alt="that's my most recent photo from instagram">
+                </div>                              
+
+                <!-- <div>          
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-python skills__icon'></i>
+                            <span class="skills__name">HTML5</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">95%</span>
+                        </div>
+                    </div>                   
+                </div> -->
+
+            </section> 
+
+            <!--===== WORK =====-->
+            <section>
+                <h2 class="about__text">My Projects</h2>
+                <div></div>
+                <div class="projects">
+                    <ul>
+                        <li class="spotify"><a href="https://github.com/alexpoov/alexpoov/blob/master/final_sp.ipynb" target="_blank">
+                            <img src="spotymy.png" alt="Analysis of my music taste via Pyton"></a>
+                            <div class="overlay">
+                                <div class="text"> Analyzing my music taste from Spotify API in Python (with clustering and visualisation) </div>
+                            </div>
+                        </li>
+                        <li class="figma"><a href="https://www.figma.com/file/K2bze5BrQKPnAuXSKWdDaV/project?node-id=58%3A14" target="_blank">
+                            <img src="treem.png" alt="Prototyping Treem Service in Figma"></a>
+                            <div class="overlay">
+                                <div class="text"> Prototyping Treem Service in Figma <br> (from JTBD to interactive) </div>
+                            </div>
+                        </li>
+                        <li class="site"><a href="#" target="_blank">
+                            <img src="site.png" alt="This site is also written by myself lol"></a>
+                            <div class="overlay">
+                                <div class="text"> This site's frontend <br> (HTML, CSS, JS) </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section>
+                <h2 >Contact me</h2>
+                <div class="contact">
+                    <form action="mailto:someone@example.com" method="post">
+                        <div class="contact__from">
+                            <input type="text" name="name" placeholder="Name" class="contact__input" id="name">
+                            <input type="text" name="mail" placeholder="Email" class="contact__input" id="email">
+                        </div>
+                        <textarea name="comment" cols="0" rows="6" class="contact__input" id="message" placeholder="Anything you would like to tell me (e.g. hindden meaning of Radiohead songs)..."></textarea>
+                        <input type="button" class="button" id="sendemail" value="Send email">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__copy">&#169; Aleksandr Popov, 2022</p>
+            <!-- <p class="footer__insp">Inspired by <a href="https://github.com/bedimcode/portfolio-responsive-complete/blob/master/index.html">Bedimcode</a></p> -->
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="main.js"></script>
+    </body>
+</html>
