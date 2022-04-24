@@ -226,10 +226,17 @@ input[type="button"]
     height: 200px;
     margin-bottom: 15px;
   }
-  .column img{
+  .column#col_text{
     width: 100%;
     margin: 5px 0;
-    max-height: 100%;
+  }
+  .column#col_img{
+    width: 100%;
+    margin: 5px 0;
+  }
+  .nav li:not(:last-child){
+    padding: 12px 10px 8px 10px;
+    margin: 0;
   }
   
 }
