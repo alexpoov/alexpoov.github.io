@@ -1,4 +1,8 @@
 
+// typewritting
+
+{/* <b>@alexpoov</b> &#127803; */}
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
