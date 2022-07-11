@@ -67,17 +67,17 @@ section {
   animation: cursor-blink .75s steps(2) infinite;
 }
 
-nav ul {
+.nav ul {
   display: inline-flex;
   align-items: center;
 }
 
-nav li:not(:last-child){
+.nav li:not(:nth-last-child(-n+2)){
   padding: 13px 14px 8px 14px;
   margin: 0 2px;
 }
 
-nav li:not(:last-child):hover{
+.nav li:not(:nth-last-child(-n+2)):hover{
   background-color: rgb(187, 187, 187);
 }
 
