@@ -57,9 +57,25 @@ section {
 }
 
 .nav__logo {
+  line-height: 10px !important;
   overflow: hidden;
   position: relative;
 }
+
+.txt-type>.txt::after {
+  content: "";
+  width: 2px;
+  height: 20px;
+  background: rgb(42, 42, 42);
+  display: inline-block;
+  animation: cursor-blink 1s steps(2) infinite;
+
+}
+
+/* .txt-type > .txt {
+  border-right: 0.1rem solid rgba(42, 42, 42, .8);
+  animation: cursor-blink 1.5s steps(2) infinite;
+} */
 
 .nav ul {
   display: inline-flex;
@@ -70,7 +86,6 @@ section {
   padding: 13px 14px 8px 14px;
   margin: 0 2px;
 }
-
 
 .nav li:not(:last-child):hover{
   background-color: rgb(187, 187, 187);
@@ -211,6 +226,16 @@ input[type="button"]
   margin: 5px 0 0 0;
   padding: 10px;
 }
+
+/* cursor animation */
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
+
+/* responsiveness */
 
 @media (orientation: portrait) {
   .column{
