@@ -91,6 +91,8 @@ section {
   background-color: rgb(187, 187, 187);
 }
 
+.cv-short { display: none; }
+
 .button {
   background-color: rgb(42, 42, 42);
   border: 2px solid rgb(42, 42, 42);
@@ -141,6 +143,12 @@ section p{
   content: "";
   display: table;
   clear: both;
+}
+
+.edu{
+  padding: 10px 20px 10px 0;
+  list-style: disc;
+  list-style-position: inside;
 }
 
 .projects ul {
@@ -244,6 +252,8 @@ input[type="button"]
 }
 
 @media (orientation: portrait) {
+  .cv-short{ display: inline-block; }
+  .cv-full { display: none; }
   .projects ul{
     flex-direction: column;
   }
