@@ -67,17 +67,17 @@ section {
   animation: cursor-blink .75s steps(2) infinite;
 }
 
-.nav ul {
+nav ul {
   display: inline-flex;
   align-items: center;
 }
 
-.nav li:not(:last-child){
+nav li:not(:last-child){
   padding: 13px 14px 8px 14px;
   margin: 0 2px;
 }
 
-.nav li:not(:last-child):hover{
+nav li:not(:last-child):hover{
   background-color: rgb(187, 187, 187);
 }
 
@@ -236,12 +236,6 @@ input[type="button"]
 /* responsiveness */
 
 @media (orientation: portrait) {
-  .column{
-    width: 100%;
-  }
-}
-
-@media (orientation: portrait) {
   .cv-short{ display: inline-block; }
   .cv-full { display: none; }
   .projects ul{
@@ -261,10 +255,12 @@ input[type="button"]
     margin: 5px 0;
   }
   .nav li:not(:last-child){
-    padding: 12px 10px 8px 10px;
+    padding: 12px 8px 8px 8px;
     margin: 0;
   }
-  
+  .column{
+    width: 100%;
+  }
 }
 
 .footer {
