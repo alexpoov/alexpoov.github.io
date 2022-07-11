@@ -62,20 +62,10 @@ section {
   position: relative;
 }
 
-.txt-type>.txt::after {
-  content: "";
-  width: 2px;
-  height: 20px;
-  background: rgb(42, 42, 42);
-  display: inline-block;
-  animation: cursor-blink 1s steps(2) infinite;
-
+.cursor {
+  color: rgb(42,42,42);
+  animation: cursor-blink .75s steps(2) infinite;
 }
-
-/* .txt-type > .txt {
-  border-right: 0.1rem solid rgba(42, 42, 42, .8);
-  animation: cursor-blink 1.5s steps(2) infinite;
-} */
 
 .nav ul {
   display: inline-flex;
