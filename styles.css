@@ -141,6 +141,12 @@ section p{
   list-style-position: inside;
 }
 
+.pubs{
+  padding: 10px 20px 10px 0;
+  list-style: disc;
+  list-style-position: inside;
+}
+
 .projects ul {
   margin-top: 15px;
   display: flex;
@@ -251,6 +257,9 @@ input[type="button"]
     margin: 5px 0;
   }
   .column#col_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin: 5px 0;
   }
