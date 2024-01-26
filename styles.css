@@ -147,6 +147,10 @@ section p{
   list-style-position: inside;
 }
 
+.main li:not(:last-child) { 
+  margin-bottom: 4px;  
+}
+
 .projects ul {
   margin-top: 15px;
   display: flex;
